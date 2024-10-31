@@ -10,7 +10,6 @@ Este proyecto es un script en Bash que automatiza el proceso de escaneo de redes
 - **Exportación de resultados**: guarda el resultado del escaneo en un archivo `.xml` y genera un archivo `.html` para facilitar su visualización en un navegador.
 
 ## Requisitos
-
 - [Nmap](https://nmap.org/) - Para realizar los escaneos de red y puertos.
 - [xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html) - Para convertir el archivo `.xml` de Nmap a `.html`.
 
@@ -18,8 +17,9 @@ Este proyecto es un script en Bash que automatiza el proceso de escaneo de redes
 ``` bash
 sudo apt update
 sudo apt install nmap xsltproc
-
+```
 Instalación en sistemas basados en Arch Linux
+``` bash 
 sudo pacman -S nmap xsltproc
 ```
 Clonar el repositorio:
@@ -48,15 +48,13 @@ Los resultados se guardarán en un directorio con el nombre scan\_results\_<time
 
 Ejemplo de salida
 
-bash
-
 ## Directorio de salida: scan_results_20240101_103000/
 ### Archivos generados:
-### ├── network_scan.xml      # Resultados del escaneo de red en XML
-### ├── network_scan.nmap     # Resultados del escaneo de red en formato Nmap
-### ├── network_scan.gnmap    # Resultados del escaneo de red en formato Greppable
-### ├── port_scan_<IP>.xml    # Resultados detallados del escaneo de puertos en XML
-### ├── port_scan_<IP>.html   # Archivo HTML generado desde el XML para visualización
+├── network_scan.xml      # Resultados del escaneo de red en XML
+├── network_scan.nmap     # Resultados del escaneo de red en formato Nmap
+├── network_scan.gnmap    # Resultados del escaneo de red en formato Greppable
+├── port_scan_<IP>.xml    # Resultados detallados del escaneo de puertos en XML
+├── port_scan_<IP>.html   # Archivo HTML generado desde el XML para visualización
 
 
 Detalles del Código
