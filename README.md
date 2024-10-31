@@ -15,21 +15,20 @@ Este proyecto es un script en Bash que automatiza el proceso de escaneo de redes
 - [xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html) - Para convertir el archivo `.xml` de Nmap a `.html`.
 
 ### Instalación en sistemas basados en Debian/Ubuntu
-# ├── sudo apt update
-# ├── sudo apt install nmap xsltproc
+``` bash
+sudo apt update
+sudo apt install nmap xsltproc
 
-# Instalación en sistemas basados en Arch Linux
-# ├── sudo pacman -S nmap xsltproc
-
-Clonar el repositorio
-
+Instalación en sistemas basados en Arch Linux
+sudo pacman -S nmap xsltproc
+```
+Clonar el repositorio:
+``` bash
 git clone https://github.com/MaximunDL/scan-script.git
 
 cd scan-script
 
 Dar permisos de ejecución al script
-
-``` bash
 
 chmod +x scan-nmap-1.0.x.sh
 
@@ -51,13 +50,13 @@ Ejemplo de salida
 
 bash
 
-# Directorio de salida: scan_results_20240101_103000/
-# Archivos generados:
-# ├── network_scan.xml      # Resultados del escaneo de red en XML
-# ├── network_scan.nmap     # Resultados del escaneo de red en formato Nmap
-# ├── network_scan.gnmap    # Resultados del escaneo de red en formato Greppable
-# ├── port_scan_<IP>.xml    # Resultados detallados del escaneo de puertos en XML
-# ├── port_scan_<IP>.html   # Archivo HTML generado desde el XML para visualización
+## Directorio de salida: scan_results_20240101_103000/
+### Archivos generados:
+### ├── network_scan.xml      # Resultados del escaneo de red en XML
+### ├── network_scan.nmap     # Resultados del escaneo de red en formato Nmap
+### ├── network_scan.gnmap    # Resultados del escaneo de red en formato Greppable
+### ├── port_scan_<IP>.xml    # Resultados detallados del escaneo de puertos en XML
+### ├── port_scan_<IP>.html   # Archivo HTML generado desde el XML para visualización
 
 
 Detalles del Código
@@ -86,10 +85,6 @@ Verde: pasos completados con éxito
 
 Contribuciones
 
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el script o encuentras errores, no dudes en enviar un pull request.
-
-Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el script o encuentras errores, no dudes en enviar un pull.
 
 Este README proporciona una explicación completa de cómo utilizar el script, los requisitos, y el propósito de cada función principal.
