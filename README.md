@@ -50,11 +50,11 @@ Ejemplo de salida
 
 ## Directorio de salida: scan_results_20240101_103000/
 ### Archivos generados:
-├── network_scan.xml      # Resultados del escaneo de red en XML
-├── network_scan.nmap     # Resultados del escaneo de red en formato Nmap
-├── network_scan.gnmap    # Resultados del escaneo de red en formato Greppable
-├── port_scan_<IP>.xml    # Resultados detallados del escaneo de puertos en XML
-├── port_scan_<IP>.html   # Archivo HTML generado desde el XML para visualización
+├── network_scan.xml      # Resultados del escaneo de red en XML <br>
+├── network_scan.nmap     # Resultados del escaneo de red en formato Nmap <br>
+├── network_scan.gnmap    # Resultados del escaneo de red en formato Greppable <br>
+├── port_scan_<IP>.xml    # Resultados detallados del escaneo de puertos en XML <br>
+├── port_scan_<IP>.html   # Archivo HTML generado desde el XML para visualización <br>
 
 
 Detalles del Código
